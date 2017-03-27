@@ -1,0 +1,22 @@
+[
+    {
+        "displayName": "Adriane Sherrill",
+        "message": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+        "createdAt": "2017-01-21T10:39:19.128Z"
+    },
+    {
+        "displayName": "Teisha Mervis",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo mollis, dictum tellus et, commodo leo.",
+        "createdAt": "2017-02-02T02:00:30.128Z"
+    },
+    {
+        "displayName": "Gidget Heffron",
+        "message": "Mauris tincidunt ornare justo, sit amet imperdiet mauris aliquet vel. Praesent eu dui ac est laoreet posuere.",
+        "createdAt": "2017-01-26T20:32:32.128Z"
+    },
+    {
+        "displayName": "Len Harsh",
+        "message": "Nam vitae malesuada ligula. Pellentesque ut posuere massa, et posuere nisi. In hac habitasse platea dictumst. Integer accumsan rutrum pellentesque.",
+        "createdAt": "2017-03-01T12:19:39.128Z"
+    }
+]

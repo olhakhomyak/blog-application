@@ -1,0 +1,21 @@
+// ***** Colors *****
+$lightblue-bg: rgba(180, 220, 222, 0.5);
+$black: rgb(0, 0, 0);
+$yellow-bg: rgb(234, 230, 114);
+$white: rgb(255, 255, 255);
+$darkred: rgb(169, 68, 68);
+$red: rgb(204, 56, 53);
+$lightgrey-txt: rgb(153, 153, 153);
+$grey-nav: rgb(208, 208, 208);
+
+
+//***** Font size ******
+$title: 15px;
+$title-sm: 13px;
+$title-lg: 18px;
+
+
+//***** Reusable *****
+@mixin add-margin-top($px) {
+  margin-top: $px;
+}

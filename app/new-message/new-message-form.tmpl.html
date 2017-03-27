@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="offset-3 col-md-6 message-form message-container">
+        <div class="message-content yellow">
+            <div class="form-inner">
+                <form name="form" ng-submit="submitForm(form.$valid)" novalidate>
+                    <i class="pin"></i>
+                    <div class="group">
+                        <input type="text" ng-model="userName" ng-pattern="checkValue" id="userName" name="userName" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="userName">{{ CONST.MSG_FORM.NAME }}</label>
+                    </div>
+                    <div class="group">
+                        <textarea type="text" ng-model="message" id="msgContent" name="msgContent" required></textarea>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="msgContent">{{ CONST.MSG_FORM.MSG }}</label>
+                    </div>
+                    <!----- ALERTS ----->
+                    <div class="alert-msg" ng-show="form.userName.$error.pattern">
+                        <i class="fa fa-exclamation" aria-hidden="true"></i>
+                        {{ CONST.ALERT.INVALID_NAME }}
+                    </div>
+                    <div class="alert-msg" ng-show="form.userName.$error.required || form.msgContent.$error.required">
+                        <i class="fa fa-exclamation" aria-hidden="true"></i>
+                        {{ CONST.ALERT.REQUIRED }}
+                    </div>
+
+                    <div class="group text-center container-btn-submit">
+                        <input class="btn submit d-inline-block" type="submit" ng-disabled="form.$invalid" value="{{ CONST.MSG_FORM.SEND }}">
+                    </div>
+                </form>
+            </div><!--form-inner-->
+        </div><!--message-content-->
+    </div><!--message-container-->
+</div><!--row-->

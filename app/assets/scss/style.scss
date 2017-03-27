@@ -1,0 +1,80 @@
+@import "_variables";
+@import "_message-form";
+@import "_note";
+
+body {
+  background-color: $lightblue-bg;
+  padding-bottom: 50px;
+  font-family: sans-serif,'Helvetica Neue', Helvetica, Arial;
+  font-weight: 400;
+
+
+  //***** NAVIGATION ******
+  nav {
+    background-color: $darkred;
+    color: $grey-nav;
+
+    &.navbar {
+      padding-bottom: 0;
+    }
+
+    .navbar-nav {
+
+      .nav-item {
+
+        .nav-link {
+          color: $grey-nav;
+        }
+
+        &.active .nav-link {
+          border-bottom: 5px solid $yellow-bg;
+          color: $white;
+        }
+
+        &:hover {
+          .nav-link {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .navbar-toggler-icon {
+      background-color: $grey-nav;
+
+      i {
+        color: $darkred;
+        vertical-align: sub;
+      }
+    }
+
+    .navbar-nav .nav-item .nav-link,
+    .navbar-brand {
+      border-bottom: 5px solid transparent;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .navbar-brand {
+      cursor: default;
+    }
+  } //navigation
+
+
+  //***** SORT MESSAGES BTN ******
+  .btn-container {
+    @include add-margin-top(100px);
+
+    .sort-btn {
+      color: $darkred;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  } //sort messages  btn
+
+}

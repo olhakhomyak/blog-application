@@ -1,0 +1,18 @@
+<nav class="navbar navbar-toggleable-md fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarToggler" aria-controls="navbarToggler"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+    </button>
+    <span class="navbar-brand">{{ CONST.NAV_MENU.BLOG }}</span>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item" ng-class="{ active: isActive('/main') }">
+                <a class="nav-link" href="#/main">{{ CONST.NAV_MENU.HOME }}</a>
+            </li>
+            <li class="nav-item" ng-class="{ active: isActive('/new-message') }">
+                <a class="nav-link" href="#/new-message">{{ CONST.NAV_MENU.NEW_MSG }}</a>
+            </li>
+        </ul>
+    </div><!--navbarToggler-->
+</nav>

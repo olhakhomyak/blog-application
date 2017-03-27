@@ -1,0 +1,21 @@
+<div class="row btn-container">
+    <div class="offset-md-3 col-md-6 offset-1 col-10 text-center">
+        <button class="d-inline-block btn btn-link sort-btn" ng-click="sortMsg()">
+            {{CONST.MSG_SUBMITTED.SORT_BY_DATE}} <i class="fa" ng-class="icon" aria-hidden="true"></i>
+        </button>
+    </div>
+</div><!--row btn-container-->
+
+<div class="row" ng-repeat="message in allMsg | orderBy: !sortByDate ? '-createdAt':'createdAt'">
+    <div class="offset-md-3 col-md-6 offset-sm-1 col-sm-10">
+        <div class="message-container">
+            <i class="pin d-block" ng-click="removeMsg(message)"></i>
+            <blockquote class="message-content yellow">
+                {{message.message}}
+                <cite class="author">
+                    {{CONST.MSG_SUBMITTED.CREATED_BY}} {{message.displayName}} {{CONST.GENERAL.AT}} {{message.createdAt | date: 'HH:mm, d MMM yyyy'}}
+                </cite>
+            </blockquote>
+        </div><!--message-container-->
+    </div>
+</div><!--row-->
